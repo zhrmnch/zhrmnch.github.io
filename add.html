@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="/Scripts/script.js" defer></script>
+
+    <title>Day Dream</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-up">
+        <div class="container-xxl">
+            <a href="index.html" class="navbar-brand">
+                <img src="/assets/logo.png" alt="logo" width="150" height="" href="index.html">
+            </a>
+
+            <!--toggle button for mobile app-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
+                aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="add.html">ADD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendar.html">CALENDAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bucketlist.html">BUCKETLIST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="support.html">SUPPORT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.html">SIGN OUT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--This section was completed with the "https://www.youtube.com/watch?v=JFfVilQSius&t=531s" tutorial with some modification which includes HTML code and CSS codes-->
+    <section id="adding " class="bg-light mt-5">
+        <div class="container-lg" style="width:800px;">
+
+            <form action="#" class="form">
+                <!--progress bar-->
+                <div class="progressbar my-6">
+                    <div class="progress" id="progress"></div>
+                    <div class="progress-step progress-step-active" data-title="Location"><img
+                            src="/assets/location.png" width="70%"></div>
+                    <div class="progress-step" data-title="Description"><img src="/assets/description.png" width="70%">
+                    </div>
+                    <div class="progress-step" data-title="Images"><img src="/assets/images.png" width="70%">
+                    </div>
+                    <div class="progress-step" data-title="Confirmation"><img src="/assets/confirmation.png"
+                            width="70%"></div>
+                </div>
+                <!--Personal information form-->
+                <div id="error"></div>
+                <div class="form-step form-step-active text-center">
+                    <h6>Step 1: Pick your dream destination</h6>
+                    <small class="text-muted" style="font-size: 25px; margin:20px ;">Search in the map and put the pin
+                        on the
+                        destination.</small>
+
+                    <!--Google map-->
+                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px ">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                    <!--Google Maps-->
+
+                    <div class="text-right">
+                        <a href="#" class="btn btn-next " type="submit"
+                            style="display:block ; width: 25%; margin-left: auto; margin-top: 20px;margin-bottom: 20px;">Next&gt</a>
+                    </div>
+
+
+                </div>
+
+
+                <!--Booking information form step-->
+                <div class="form-step ">
+                    <h6>Step 2: Add a note for your future self</h6>
+
+                    <div class="supportinput">
+                        <input type="text" name="messagetosupport" id="message"
+                            placeholder=" ex. what to pack? Which season is the best? "
+                            style="border: solid grey thin; padding-bottom: 100px; font-size: 25px; margin-bottom: 20px;"
+                            required />
+
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <div class="text-left">
+                                <a href="#" class="btn btn-prev"
+                                    style="display:block ; width:50%; margin-right: auto; margin-bottom: 20px;">
+                                    &lt Back</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="text-right">
+                                <a href="#" class="btn btn-next"
+                                    style="display:block ; width:50%; margin-left: auto; margin-bottom: 20px;">Next
+                                    &gt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--payment information  step form-->
+                <div class="form-step  text-center">
+                    <h6>Step 3: Add some pictures.</h6>
+                    <small class="text-muted" style="font-size: 25px; margin:20px ;">Add the pictures that inspired
+                        you.</small>
+
+                    <div class="photo-container">
+                        <img src="/assets/addImage.png" alt="image" style="margin:20px ;">
+
+
+                    </div>
+
+                    <div class="row ">
+                        <div class="col">
+                            <div class="text-left">
+                                <a href="#" class="btn btn-prev"
+                                    style="display:block ; width:50%; margin-right: auto; margin-bottom: 20px;">
+                                    &lt Back</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="text-right">
+                                <a href="#" class="btn btn-next"
+                                    style="display:block ; width: 50%; margin-left: auto; margin-bottom: 20px;">Complete
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Confirmation step form-->
+                <div class="form-step  text-center">
+                    <h6>CONFIRMATION</h6>
+                    <small class="text-muted" style="font-size: 25px; margin:20px ;">This idea is added to your bucket
+                        list!</small>
+                    <br>
+                    <small class="text-muted" style="font-size: 25px; margin:20px ;"> the "BUCKETLIST" tab to edit or
+                        view your other items.</small>
+                    <img src="/assets/checkincircle.png" style="width: 50%;">
+
+                    <div class="text-right">
+                        <a href="bucketlist.html" class="btn btn-next"
+                            style="display:block ; width: 50%; margin-left: auto; margin-bottom: 20px;">Show my destinations
+                        </a>
+                    </div>
+
+                </div>
+
+        </div>
+
+
+
+
+        </form>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
